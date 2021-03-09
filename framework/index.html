@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en-gb" dir="ltr">
+    <head> 
+        
+        <title>Framework</title>
+        
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <meta name="uikit-version" content="3.5.7"/>
+        <meta name="project-version" content="1.0.0"/>
+                
+        <link rel="stylesheet" type="text/css" media="all" href="css/uikit.min.css" />
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="index, follow" />
+
+        <style type="text/css" media="all">
+            .uk-button,  
+            .uk-input{
+                border-radius: 10px
+            }
+            
+            .uk-navbar-item{
+                padding: 0
+            }
+            
+            .my-dropdown{
+                min-width: 400px
+            }
+            
+            .uk-parent > a{
+                font-weight: bolder
+            }
+
+            hr{
+                margin: 0
+            }
+
+            h3, h4, h5,
+            .uk-text-large {
+                margin-bottom: 2px
+            }
+
+            .uk-icon-button{
+                width: 60px;
+                height: 60px;
+            }
+
+            .uk-navbar-dropdown-grid > :not(.uk-first-column)::before,
+            .uk-navbar-dropdown-grid.uk-grid-stack > .uk-grid-margin::before  {
+                border: none !important;
+            }
+
+            a:hover{
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="uk-offcanvas-content">
+            <!-- Google fonts  -->
+            <link href="https://fonts.googleapis.com/css?family=Poppins:400,700," rel="stylesheet">
+            <!-- Section top mnessage -->
+            <div class="uk-section uk-section-xsmall uk-section-muted uk-flex uk-flex-center uk-flex-middle uk-visible@m">
+                <span class="uk-text-small uk-margin-right">Lorem ipsum dolor sit amet, sapien platea morbi dolor lacus nunc, nunc ullamcorper.</span>
+                <button class="uk-button uk-button-default uk-button-small">Register now</button>
+            </div>
+            <!-- Section navigation -->
+            <div class="uk-section uk-section-xsmall">
+                <div class="uk-container">
+                    <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                        <div class="uk-navbar-left">
+                            <a class="uk-navbar-item uk-logo" href="#">
+                                <img data-src="images/uikit.png" width="80" height="80" alt="" uk-img>
+                            </a>
+                            <ul class="uk-navbar-nav uk-margin-left uk-visible@m">
+                                <li>
+                                    <a href="#">Framework <span uk-icon="icon:  triangle-down"></span></a>
+                                    <div class="uk-navbar-dropdown uk-navbar-dropdown-width-4" uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify;">
+                                        <div class="uk-navbar-dropdown-grid uk-child-width-1-4" uk-grid uk-scrollspy="target: .uk-navbar-dropdown-nav; cls: uk-animation-slide-bottom-small; delay: 100">
+                                            <div >
+                                                <span class="uk-text-small uk-text-muted">BUILD</span>
+                                                <ul class="uk-nav uk-navbar-dropdown-nav uk-margin-small-top">
+                                                    <li class="uk-flex uk-flex-middle">
+                                                        <span uk-icon="icon: uikit; ratio: 2.1"></span>
+                                                        <div class="uk-margin-left"> 
+                                                            <a href="#"><h5>Framework</h5></a>
+                                                            <span class="uk-text-meta">Modular arquitecture</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="uk-flex uk-flex-middle uk-margin-top">
+                                                        <span uk-icon="icon: tablet-landscape; ratio: 2.1"></span>
+                                                        <div class="uk-margin-left"> 
+                                                            <a href="#"><h5>Modular</h5></a>
+                                                            <span class="uk-text-meta">Mobile-first design</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="uk-nav-divider uk-margin-top"></li>
+                                                    <li class="uk-flex uk-flex-middle uk-margin-top">
+                                                        <span uk-icon="icon: settings; ratio: 2.1"></span>
+                                                        <div class="uk-margin-left"> 
+                                                            <a href="#"><h5>Settings</h5></a>
+                                                            <span class="uk-text-meta">Innovative UI</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="uk-flex uk-flex-middle uk-margin-top">
+                                                        <span uk-icon="icon: cog; ratio: 2.1"></span>
+                                                        <div class="uk-margin-left"> 
+                                                            <a href="#"><h5>Customize</h5></a>
+                                                            <span class="uk-text-meta">Expert controllers</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <span class="uk-text-small uk-text-muted">DELIVER</span>
+                                                <ul class="uk-nav uk-navbar-dropdown-nav uk-margin-small-top">
+                                                    <li class="uk-flex uk-flex-middle">
+                                                        <span uk-icon="icon: cloud-upload; ratio: 2.1"></span>
+                                                        <div class="uk-margin-left"> 
+                                                            <a href="#"><h5>Publish</h5></a>
+                                                            <span class="uk-text-meta">Authentication</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="uk-flex uk-flex-middle uk-margin-top">
+                                                        <span uk-icon="icon: sign-in; ratio: 2.1"></span>
+                                                        <div class="uk-margin-left"> 
+                                                            <a href="#"><h5>Connect</h5></a>
+                                                            <span class="uk-text-meta">Secure sign-in</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <span class="uk-text-small uk-text-muted">PUBLISH</span>
+                                                <ul class="uk-nav uk-navbar-dropdown-nav uk-margin-small-top">
+                                                    <li class="uk-flex uk-flex-middle">
+                                                        <span uk-icon="icon: phone; ratio: 2.1"></span>
+                                                        <div class="uk-margin-left"> 
+                                                            <a href="#"><h5>Simulator</h5></a>
+                                                            <span class="uk-text-meta">Mobile UI toolkit</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="uk-padding-small uk-background-muted">
+                                                <ul class="uk-nav uk-navbar-dropdown-nav uk-margin-small-top">
+                                                    <li class="uk-flex uk-flex-middle">
+                                                        <div> 
+                                                            <a href="#"><h5>Enterprise support</h5></a>
+                                                            <span class="uk-text-meta">Lorem ipsum dolor sit amet, sapien platea morbi dolor lacus nunc, nunc ullamcorper.</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="uk-flex uk-flex-middle uk-margin-top">
+                                                        <div> 
+                                                            <a href="#"><h5>Professional services</h5></a>
+                                                            <span class="uk-text-meta">Lorem ipsum dolor sit amet, sapien platea morbi dolor lacus nunc, nunc ullamcorper.</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="uk-flex uk-flex-middle uk-margin-top">
+                                                        <div> 
+                                                            <a href="#"><h5>Expert training</h5></a>
+                                                            <span class="uk-text-meta">Lorem ipsum dolor sit amet, sapien platea morbi dolor lacus nunc, nunc ullamcorper.</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">Developers <span uk-icon="icon: triangle-down"></span></a>
+                                    <div class="uk-navbar-dropdown  uk-navbar-dropdown-width-2">
+                                        <p class="">Documentation</p>
+                                        <hr>
+                                        <div class="uk-navbar-dropdown-grid uk-child-width-1-2 uk-margin-top" uk-grid uk-scrollspy="target: .uk-navbar-dropdown-nav; cls: uk-animation-slide-bottom-small; delay: 100">
+                                            <div>
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    <li class="uk-nav-header">Topics</li>
+                                                    <li><a href="#"><span uk-icon="icon: download; ratio: 1"></span> Installation</a></li>
+                                                    <li><a href="#"><span uk-icon="icon: database; ratio: 1"></span> Components</a></li>
+                                                    <li><a href="#"><span uk-icon="icon: phone; ratio: 1"></span> Responsive design</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    <li class="uk-nav-header">Community</li>
+                                                    <li><a href="#"><span uk-icon="icon: home; ratio: 1"></span> Hub</a></li>
+                                                    <li><a href="#"><span uk-icon="icon: users; ratio: 1"></span> Forums</a></li>
+                                                    <li><a href="#"><span uk-icon="icon: github; ratio: 1"></span> Development</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Resources</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                        </div>
+                        <div class="uk-navbar-right">
+                            <ul class="uk-navbar-nav">
+                                <li class="uk-visible@m">
+                                    <a href="#">Parent <span uk-icon="icon:  triangle-down"></span></a>
+                                    <div class="uk-navbar-dropdown" uk-scrollspy="target: .uk-navbar-dropdown-nav; cls: uk-animation-slide-bottom-small; delay: 100">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li><a href="#"><span uk-icon="icon: lifesaver; ratio: 1"></span> Help Desk</a></li>
+                                            <li><a href="#"><span uk-icon="icon: check; ratio: 1"></span> Trusted partners</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="uk-navbar-item uk-visible@m">
+                                    <button class="uk-button uk-button-primary">Get Started</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="uk-navbar-toggle uk-hidden@m" uk-toggle="target: #offcanvas-nav">
+                            <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+            <!-- Section banner -->
+            <div class="uk-section">
+                <div class="uk-container">
+                    <div class="uk-grid-large uk-child-width-1-2@m" uk-grid uk-scrollspy="target: > div; cls: uk-animation-slide-bottom-small; delay: 100">
+                        <div>
+                            <div class="uk-heading-medium uk-text-bolder">
+                                One framework,<br>
+                                Any website.<br>
+                                Now for<br> 
+                                <span class="uk-text-danger">Wordpress.</span>    
+                            </div>
+                            <p class="uk-text-large uk-margin-medium-top">
+                                <b>Lorem ipsum</b> dolor sit amet, sapien platea morbi dolor lacus nunc, nunc ullamcorper. 
+                                Felis aliquet egestas vitae, nibh ante quis quis dolor sed mauris.
+                            </p>
+                            <div class="uk-margin-medium-top" uk-margin>
+                                <button class="uk-button uk-button-large uk-button-primary">Start an App</button>
+                                <button class="uk-button uk-button-large uk-button-default">Install Now</button>
+                            </div> 
+                            <p class="uk-text-small uk-text-primary uk-margin-small-top">Or speack to one web architect <span uk-icon="icon: arrow-right"></span></p>
+                        </div>
+                        <div>
+                            <img data-src="images/web.jpg" width="1800" height="1200" alt="" uk-img>
+                        </div>
+                    </div>
+                    <div class="uk-grid-large uk-child-width-1-2@m uk-margin-xlarge-top" uk-grid>
+                        <div class="uk-flex uk-flex-left@m" uk-grid>
+                            <a href="#" class="uk-flex uk-flex-middle"><span uk-icon="icon: twitter"></span>&nbsp;13.2k</a>
+                            <a href="#" class="uk-flex uk-flex-middle"><span uk-icon="icon: github"></span>&nbsp;41k</a>
+                            <a href="#" class="uk-flex uk-flex-middle"><span uk-icon="icon: twitter"></span>&nbsp;13.2k</a>
+                        </div>
+                        <div>
+                            <div class="uk-inline uk-width-1-1">
+                                <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: arrow-right"></span>
+                                <input class="uk-input" placeholder="Join our newsletter" type="text">
+                            </div>
+                        </div> 
+                    </div>
+                </div> 
+            </div>
+            <!-- Section content -->
+            <div class="uk-section uk-section-large">
+                <div class="uk-container">
+                    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-flex uk-flex-middle uk-background-muted" uk-grid uk-scrollspy="target: > div; cls: uk-animation-slide-bottom-small; delay: 150">
+                        <div class="uk-card-media-left uk-cover-container">
+                            <img src="images/mobile-apps.jpg" alt="" uk-cover>
+                            <canvas width="600" height="400"></canvas>
+                        </div>
+                        <div>
+                            <div class="uk-card-body">
+                                <p class="uk-text-large"><b>Lorem ipsum</b> dolor sit amet, sapien platea morbi dolor lacus nunc, nunc ullamcorper. 
+                                    Felis aliquet egestas vitae, nibh ante quis quis dolor sed mauris.
+                                </p>
+                                <button class="uk-button uk-button-medium uk-button-primary">Take action</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Section performance -->
+            <div class="uk-section uk-section-large">
+                <div class="uk-container">
+                    <div class="uk-grid-large uk-child-width-1-2@m uk-flex uk-flex-middle" uk-grid uk-scrollspy="target: > div; cls: uk-animation-slide-bottom-small; delay: 200">
+                        <div>
+                            <p class="uk-text-small uk-text-uppercase uk-text-bolder">Performance obcessed</p>
+                            <span class="uk-heading-small uk-text-bolder">
+                                Build fast pages,<br>
+                                faster than before.
+                            </span>
+                            <p> 
+                                Lorem ipsum dolor sit amet, sapien platea morbi dolor lacus nunc, nunc ullamcorper. Felis aliquet egestas vitae, nibh ante quis quis dolor sed mauris. Erat lectus sem ut lobortis, adipiscing ligula eleifend, sodales fringilla mattis dui nullam. Ac massa aliquet.
+                            </p>
+                            <button class="uk-button uk-button-medium uk-button-primary">Start building</button>
+                        </div>
+                        <div>
+                            <div class="uk-grid-divider uk-child-width-1-2@m uk-flex uk-flex-middle" uk-grid>
+                                <div>
+                                    <div class="uk-text-lead">Up to</div>
+                                    <span class="uk-heading-small">60fps</span>
+                                    <p class="uk-text-small uk-margin-bottom">Lorem ipsum dolor sit amet, sapien platea morbi dolor lacus nunc, nunc ullamcorper.</p>
+                                </div>
+                                <div>
+                                    <div class="uk-text-lead">Consistent</div>
+                                    <span class="uk-heading-small">100%</span>
+                                    <p class="uk-text-small uk-margin-bottom">Lorem ipsum dolor sit amet, sapien platea morbi dolor lacus nunc, nunc ullamcorper.</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="uk-grid-divider uk-child-width-1-2@m uk-flex uk-flex-middle" uk-grid>
+                                <div>
+                                    <div class="uk-text-lead uk-margin-top">Down to</div>
+                                    <span class="uk-heading-small">2.2s</span>
+                                    <p class="uk-text-small">Lorem ipsum dolor sit amet, sapien platea morbi dolor lacus nunc, nunc ullamcorper.</p>
+                                </div>
+                                <div>
+                                    <div class="uk-text-lead uk-margin-top">Up to</div>
+                                    <span class="uk-heading-small">2x</span>
+                                    <p class="uk-text-small">Lorem ipsum dolor sit amet, sapien platea morbi dolor lacus nunc, nunc ullamcorper.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Section banner bottom -->
+            <div class="uk-section uk-section-primary">
+                <div class="uk-container">
+                    <div class="uk-grid-large uk-flex uk-flex-middle" uk-grid>
+                        <div class="uk-width-expand@s">
+                            <div>
+                                <h1 class="">Start building professional web applications today.</h1>
+                            </div>
+                            <span>UIkit is quick to install and it’s easy to get started.</span>
+                        </div>
+                        <div>
+                            <button class="uk-button uk-button-large uk-button-primary">Install now&nbsp;&nbsp;&nbsp;<span uk-icon="icon: server"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Section support -->
+            <div class="uk-section uk-padding-remove-vertical">
+                <div class="uk-container uk-container-small">
+                    <div class="uk-grid-divider uk-child-width-1-4@s uk-text-center" uk-grid>
+                        <div class="">
+                            <div class="uk-margin-large-top uk-margin-large-bottom">
+                                <span uk-icon="icon: world; ratio: 3;"></span>
+                                <h3 class="">Support</h3>
+                                <span class="uk-text-meta">Lorem ipsum dolor sit</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-margin-large-top uk-margin-large-bottom">
+                                <span uk-icon="icon: git-branch; ratio: 3;"></span>
+                                <h3 class="">Updates</h3>
+                                <span class="uk-text-meta">Lorem ipsum dolor sit</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-margin-large-top uk-margin-large-bottom">
+                                <span uk-icon="icon: file-text; ratio: 3;"></span>
+                             <h3 class="">Documentation</h3>
+                                <span class="uk-text-meta">Lorem ipsum dolor sit</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-margin-large-top uk-margin-large-bottom">
+                                <span uk-icon="icon: twitter; ratio: 3;"></span>
+                                <h3 class="">Twitter</h3>
+                                <span class="uk-text-meta">Lorem ipsum dolor sit</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        <hr>
+        <!-- Section footer top links -->
+        <div class="uk-section uk-section-medium uk-section-default" >
+            <div class="uk-container">
+                <div class="uk-child-width-1-3 uk-child-width-1-6@s uk-text-center" uk-grid>
+                    <div>
+                        <img class="" data-src="images/uikit.png" width="70" height="70" alt="UIkit" uk-img>
+                    </div>
+                    <div>
+                        <ul class="uk-nav uk-nav-default uk-text-left">
+                            <li class="uk-nav-header">Header</li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="uk-nav uk-nav-default uk-text-left">
+                            <li class="uk-nav-header">Developers</li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="uk-nav uk-nav-default uk-text-left">
+                            <li class="uk-nav-header">Support</li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="uk-nav uk-nav-default uk-text-left">
+                            <li class="uk-nav-header">Resources</li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="uk-nav uk-nav-default uk-text-left">
+                            <li class="uk-nav-header">Company</li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="uk-grid-large uk-child-width-1-2@s uk-margin-large-top uk-flex uk-flex-middle" uk-grid>
+                    <div class="uk-flex uk-flex-start uk-flex-middle">
+                        <span class="uk-icon-button uk-margin-right" uk-icon="icon: mail"></span>
+                        <div>
+                            <p class="uk-text-large">Join our newsletter</p>
+                            <span>Sign to receive a monthly email on updates, features, and news!</span>
+                        </div>
+                    </div>
+                    <div>
+                    <div class="uk-inline uk-width-1-1">
+                            <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: arrow-right"></span>
+                            <input class="uk-input" placeholder="Join our newsletter" type="text">
+                        </div>
+                    </div>
+                </div>
+                <hr class="uk-margin-large-top">
+            </div>
+            <!-- Section footer -->
+            <div class="uk-section uk-section-xsmall uk-margin-top">
+                <div class="uk-container">
+                    <div class="uk-child-width-1-2@m" uk-grid>
+                        <div>
+                            <ul class="uk-subnav">
+                                <li>© Copyright</li>
+                                <li><a href=""></a>Terms</li>
+                                <li><a href=""></a>Privacy</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="uk-subnav uk-flex-right@m">
+                                <li><a href="" uk-icon="icon: twitter"></a></li>
+                                <li><a href="" uk-icon="icon: youtube"></a></li>
+                                <li><a href="" uk-icon="icon: facebook"></a></li>
+                                <li><a href="" uk-icon="icon: github"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Off-canvas -->
+            <div id="offcanvas-nav" uk-offcanvas="overlay: true; flip: true">
+                <div class="uk-offcanvas-bar">
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    <ul class="uk-nav uk-nav-default uk-margin-top">
+                        <li class="uk-parent">
+                            <a href="#">Framework</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="#">Modular</a></li>
+                                <li><a href="#">Settings</a></li>
+                                <li><a href="#">Publish</a></li>
+                                <li><a href="#">Connect</a></li>
+                            </ul>
+                            <a href="#">Developers</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="#">Documentation</a></li>
+                                <li><a href="#">Installation</a></li>
+                                <li><a href="#">Components</a></li>
+                                <li><a href="#">Hub</a></li>
+                                <li><a href="#">Forum</a></li>
+                                <li><a href="#">Develpment</a></li>
+                            </ul>
+                            <a href="#">Pricing</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Resources</a>
+                            <a href="#">Support</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="#">Help Desk</a></li>
+                                <li><a href="#">Trusted Partners</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <hr class="uk-margin-medium-top">
+                    <ul class="uk-subnav uk-flex uk-flex-between uk-margin-medium-top">
+                        <li><a href="" uk-icon="icon: twitter"></a></li>
+                        <li><a href="" uk-icon="icon: youtube"></a></li>
+                        <li><a href="" uk-icon="icon: facebook"></a></li>
+                        <li><a href="" uk-icon="icon: github"></a></li>
+                    </ul>
+                    <button class="uk-button uk-button-primary uk-width-1-1 uk-margin-top">Get Started</button>
+                </div>
+            </div>
+        </div>
+        <script src="scripts/uikit.min.js"></script>
+        <script src="scripts/uikit-icons.min.js"></script>
+    </body>
+</html>
