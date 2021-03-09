@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en-gb" dir="ltr">
+    <head> 
+        
+        <title>Layers</title>
+        
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <meta name="uikit-version" content="3.5.7"/>
+        <meta name="project-version" content="1.0.0"/>
+                
+        <link rel="stylesheet" type="text/css" media="all" href="css/uikit.min.css" />
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="index, follow" />
+
+        <style type="text/css" media="all">
+            body, h1{
+                color: #fff;
+            }
+            h1{
+                letter-spacing: 12px;
+                margin-bottom: 5px;
+            }
+            .tm-ls-1{
+                letter-spacing: 14px;
+            }
+            .tm-ls-2{
+                letter-spacing: 11px;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="uk-offcanvas-content">
+            <!-- Main container -->
+            <div uk-height-viewport="min-height: 500;">
+                <div class="uk-position-top">
+                    <div uk-slideshow="autoplay: true; finite: false; autoplay: true; autoplay-interval: 4000; velocity: 1; pause-on-hover: false; animation: push;">
+                        <ul class="uk-slideshow-items" uk-height-viewport="min-height: 500">
+                            <li>
+                                <div class="uk-position-cover uk-animation-kenburns uk-transform-origin-center-left">
+                                    <img src="images/josh-nuttall-351981-unsplash-1300.jpg" alt="" uk-cover uk-img="target: !.uk-slideshow-items">
+                                    <div class="uk-position-center uk-position-large uk-text-center">
+                                        <div uk-scrollspy="cls: uk-animation-slide-top-small; delay: 1000; repeat: true">
+                                            <div uk-slideshow-parallax="x: 0,0,0,500;">
+                                                <h1>EMOTIVE</h1>
+                                            </div>
+                                        </div>
+                                        <div uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 1250; repeat: true">
+                                            <div uk-slideshow-parallax="x: 0,0,0,-500;">
+                                                <p class="tm-ls-1">TECHNOLOGY</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-position-cover uk-animation-kenburns uk-transform-origin-center-left">
+                                    <img src="images/josh-nuttall-305072-unsplash-1300.jpg" alt="" uk-cover uk-img="target: !.uk-slideshow-items">
+                                    <div class="uk-position-center uk-position-large uk-text-center">
+                                        <div uk-scrollspy="cls: uk-animation-slide-top-small; delay: 1000; repeat: true">
+                                            <div uk-slideshow-parallax="y: 0,0,0,100;">
+                                                <span class="tm-ls-2">REVOLUTIONARY</span>
+                                            </div>
+                                        </div>
+                                        <div uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 1250; repeat: true">
+                                            <div uk-slideshow-parallax="y: 0,0,0,-100;">
+                                                <h1>MOBILITY</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-position-cover uk-animation-kenburns uk-transform-origin-center-left">
+                                    <img src="images/josh-nuttall-271926-unsplash-1300.jpg" alt="" uk-cover uk-img="target: !.uk-slideshow-items">
+                                    <div class="uk-position-center uk-position-large uk-text-center">
+                                        <div uk-scrollspy="cls: uk-animation-slide-top-small; delay: 1000; repeat: true">
+                                            <div uk-slideshow-parallax="x: 0,0,-300,0;">
+                                                <h1>MEANINGFUL</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-position-center uk-position-large uk-text-center uk-light">
+                                        <div uk-scrollspy="cls: uk-animation-slide-left-medium; delay: 1250; repeat: true">
+                                            <div uk-slideshow-parallax="x: 0,0,350,0;">
+                                                <h1>DESIGN</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="uk-position-top-left uk-position-large uk-light">
+                    <h1>LAYERS</h1>
+                </div>
+                <div class="uk-position-center-left uk-position-large uk-light">
+                    <a href="#offcanvas" uk-toggle uk-icon="icon: menu; ratio: 2"></a>
+                </div>
+                <div class="uk-position-bottom-left uk-position-large uk-light">
+                    <p>Photography by Josh Nuttall</p>
+                </div>
+            </div>
+            <!-- Off-canvas -->
+            <div id="offcanvas" uk-offcanvas="overlay: true; flip: true; mode: push">
+                <div class="uk-offcanvas-bar uk-flex uk-flex-column uk-text-center">
+                    <h1>LAYERS</h1>
+                    <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li class="uk-parent">
+                            <a href="#">Parent</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="#">Sub item</a></li>
+                                <li><a href="#">Sub item</a></li>
+                            </ul>
+                        </li>
+                        <li class="uk-nav-header">Header</li>
+                        <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
+                        <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
+                    </ul>
+                    <ul class="uk-subnav uk-flex uk-flex-between uk-margin-medium-top">
+                        <li><a href="" uk-icon="icon: twitter"></a></li>
+                        <li><a href="" uk-icon="icon: youtube"></a></li>
+                        <li><a href="" uk-icon="icon: facebook"></a></li>
+                        <li><a href="" uk-icon="icon: github"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="scripts/uikit.min.js"></script>
+        <script src="scripts/uikit-icons.min.js"></script>
+    </body>
+</html>
